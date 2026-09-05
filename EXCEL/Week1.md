@@ -165,41 +165,82 @@
 
 2. F2 : 활성화된 셀 즉시 편집 (이미 값이 입력된 셀을 편집하려고 하는 경우에 사용)
 +) 수식을 편집하는 경우에도 많이 사용함 (데이터 유효성 검사나 조건부 서식의 수식을 수정하는 경우)
-   
-4. 
+
 ## 02-1. 보기 좋은 표, 활용할 수 있는 데이터를 위한 필수 상식
 > **데이터와 표를 비교해주세요**
-<!-- 여기에 정리해주세요. -->
+[표 vs 데이터]
+표 :  사람이 보기에 편리하도록 '시각화된 서식' (즉, 시각화된 데이터의 한 종류)
+
+데이터와 표의 역할을 혼동하고 한 곳에 작성한 경우 발생할 현상
+1. 데이터를 정렬하거나 특정 값을 찾아야 하는 경우
+   정렬 왜곡 : 셀 병합이나 중간중간 삽입된 행이 있는 상태에서 정렬을 실행하면, 병합된 셀이 깨지거나 소계 행이 데이터 한가운데로 섞여 들어가 구조 자체가 붕괴된다.
+   조회/탐색 실패 : 가독성을 위해 여러 속성을 한 셀에 합치거나 상위 범주를 셀 병합으로 비워두면 빈 셀이나 복합 무자열 때문에 정확한 탐색이 불가능해진다.
+2. 새로운 데이터가 누적되는 경우
+  열 방향 확장 오류 : 새로운 시점의 데이터가 생길 때마다 열을 계속 오른쪽으로 추가해야 한다.
+  집계 단절 : 데이터는 행 방향으로 쭉 쌓이는 롱 포맷이어야 자동 수집 및 적재가 가능하지만, 표 형태로 관리하면 새 데이터가 들어올 때마다 수식 범위, 참조 영역, 매크로를 수작업으로 수정해야 한다.  
+3. 새로운 구분자를 추가해야 하는 경우
+  다차원 확장 불가 : 새로운 속성이 생겼을 때 단순히 새 컬럼 하나를 추가할 수 없다.
+  서식 재설계 : 이미 만들어진 표 형태에서 제 3의 구분자를 넣으면 기존의 표의 레이아웃을 다 수정해야 하는 비효율이 발생한다.
+
+=> 함수를 잘 사용하는 것보다 올바른 데이터 관리가 더욱 중요
 
 > **셀 병합 기능을 자제해야 하는 이유를 정리해주세요.**
-<!-- 여기에 정리해주세요. -->
+[셀 병합으로 인해 발생하는 문제점]
+1. 범위 선택이 제한된다.
+2. 범위의 수정/편집이 제한된다.
+3. 표 기능과 피벗 테이블 사용이 제한된다.
+4. 자동 채우기를 제대로 활용할 수 없다.
+5. 데이터 정렬 기능을 사용할 수 없다.
+6. 함수를 사용할 때 옳지 않은 결과를 반환할 수 있다.
 
+=> 엑셀의 기능을 제대로 활용하는 데 많은 제약을 일으킨다.
 
 ## 02-2. 편리한 엑셀 문서 작업을 위한 실력 다지기
 > **셀 병합하지 않고 가운데 정렬하(75 ~77p)를 진행 후 인증사진을 첨부해주세요.**
-<!-- 이 부분을 지우고 인증사진을 제출해주세요.-->
+<img width="1919" height="1079" alt="스크린샷 2026-09-06 003319" src="https://github.com/user-attachments/assets/18fd3d1f-a9fd-4854-97f6-8b43dd8ea655" />
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/48d72985-78fe-4a23-8044-85ca28e8c372" />
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/d5ae7a51-e113-40d4-8c80-a7d634132470" />
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/f03847d0-e853-43d1-b6eb-ef1de85ba8e2" />
+<img width="1917" height="1079" alt="image" src="https://github.com/user-attachments/assets/8788a834-6a09-41fe-9c7b-41a1ba8a4c38" />
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/3b00dd39-7730-4ad3-bd24-c1a2478d0848" />
 
 > **셀 병합 해제 후 빈칸 쉽게 체우기(78 ~79p)를 진행 후 인증사진을 첨부해주세요.**
-<!-- 이 부분을 지우고 인증사진을 제출해주세요.-->
+<img width="1915" height="1074" alt="image" src="https://github.com/user-attachments/assets/fe736082-bd57-4c34-aa29-b6ea5f9013dd" />
+<img width="1916" height="1079" alt="image" src="https://github.com/user-attachments/assets/d458c242-acd0-4de2-9cf5-128f7fc9f01b" />
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/14fa0dc7-d985-4f77-9de6-b04b89af447f" />
+
 
 > **빈 셀을 한 번에 찾고 내용 입력하기(80 ~81p)를 진행 후 인증사진을 첨부해주세요.**
-<!-- 이 부분을 지우고 인증사진을 제출해주세요.-->
+<img width="1918" height="1079" alt="image" src="https://github.com/user-attachments/assets/7ab798b7-189b-4809-a5bc-da3fb0c9bc91" />
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/fcaa47b9-d9d8-44a3-b482-d5e5d71ec3f0" />
 
 > **숫자 데이터의 기본 단위를 한 번에 바꾸는 방법(84 ~87p)를 진행 후 인증사진을 첨부해주세요.**
-<!-- 이 부분을 지우고 인증사진을 제출해주세요.-->
+[곱하기/나누기로 단위 변경하기]
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/faefee35-90a5-44e7-a115-c99643387ae4" />
+<img width="1915" height="1079" alt="image" src="https://github.com/user-attachments/assets/d0b9b8e4-6ccd-405e-8b09-9927a28670b2" />
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/aeb8a54e-ceb9-41aa-8951-36a09ffe627b" />
 
+[셀 서식으로 단위 변경하기]
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/8e4c15a5-0ee4-4d86-8846-0fc0e42ae6c7" />
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/5e01bbc2-f37f-4c70-9b1c-45c34dfcd88b" />
 
 ## 02-3. 엑셀로 시작하는 기초 데이터 분석
 > **행/열 전환하여 새로운 관점으로 데이터 살펴보기(88 ~90p)를 진행 후 인증사진을 첨부해주세요.**
-<!-- 이 부분을 지우고 인증사진을 제출해주세요.-->
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/458ef2b9-4898-4cf8-adda-76c6b83ff533" />
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/8ac12144-bf8b-40cf-a73a-fc782046ced0" />
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/bb1c2842-ce68-4ff0-84cc-b5b7246b8ff4" />
 
 > **중복된 데이터 입력 제한하기(90 ~92p)를 진행 후 인증사진을 첨부해주세요.**
-<!-- 이 부분을 지우고 인증사진을 제출해주세요.-->
-
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/765111cb-ea7e-4d9c-91c4-ff48ced492fa" />
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/b81302bd-e513-4472-904b-2f5dff12b2ba" />
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/e2a360fd-cde3-4ac8-b5a4-6955c38cade2" />
 
 ## 02-4. 엑셀 데이터 가공을 위한 텍스트 나누고 합치기
 > **여러 줄을 한 줄로 합치거나 한 줄을 여러 줄로 분리하기(104 ~107p)를 진행 후 인증사진을 첨부해주세요.**
-<!-- 이 부분을 지우고 인증사진을 제출해주세요.-->
+[줄 바꿈하여 입력한 내용을 한 줄로 합치기]
+<img width="1915" height="1076" alt="image" src="https://github.com/user-attachments/assets/cc233d12-fea0-470d-a0dc-80a305517bfc" />
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/f44c7e56-0beb-4a3a-8111-a93daad52874" />
+
 
 > **여러 열에 입력된 내용을 간단하게 한 열로 합치기(108 ~109p)를 진행 후 인증사진을 첨부해주세요.**
 <!-- 이 부분을 지우고 인증사진을 제출해주세요.-->
