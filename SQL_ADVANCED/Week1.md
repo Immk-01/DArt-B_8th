@@ -58,7 +58,8 @@ https://www.youtube.com/watch?v=lBk5YhLZevs&list=PLVsNizTWUw7GCfy5RH27cQL5MeKYnl
 <img width="1919" height="1077" alt="스크린샷 2026-09-05 214732" src="https://github.com/user-attachments/assets/f8ba5abc-86d9-457f-95a9-1ea23a84ac43" />
 
 > **테이블 만들기(71 ~ 75p)의 1~7과정 진행 후 과제 페이지에서 요구하는 인증사진을 첨부해주세요.**
-<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/0d48fe82-9160-445a-ad5c-c1938b33e29b" />
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/75b9bc22-d139-4108-92b8-e69154be63a9" />
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/5f805174-75d8-4ff9-8ffa-bf8d8d4da30d" />
 
 > **데이터 입력하기(75 ~ 79p)의 1~11과정 진행 후 과제 페이지에서 요구하는 인증사진을 첨부해주세요.**
 <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/12a1c183-27df-462c-9c64-5319c652771f" />
