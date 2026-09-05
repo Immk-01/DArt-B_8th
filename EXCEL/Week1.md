@@ -241,9 +241,15 @@
 <img width="1915" height="1076" alt="image" src="https://github.com/user-attachments/assets/cc233d12-fea0-470d-a0dc-80a305517bfc" />
 <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/f44c7e56-0beb-4a3a-8111-a93daad52874" />
 
+[마침표를 기준으로 줄 바꿈하기]
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/fdd39d25-7f62-41df-91e5-f014a48b31f0" />
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/fe190019-b565-4637-b4ee-a122fadbb20c" />
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/daab30ad-38d4-4f83-9062-a216a1df6ee9" />
 
 > **여러 열에 입력된 내용을 간단하게 한 열로 합치기(108 ~109p)를 진행 후 인증사진을 첨부해주세요.**
-<!-- 이 부분을 지우고 인증사진을 제출해주세요.-->
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/624f356c-ab73-4b1d-abd9-069e4412494b" />
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/84fb9c79-98a1-4d36-ad5c-37526b8c6adf" />
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/9ed82ab9-ab24-4bab-b65b-5d5b1c3ae6be" />
 
 ---
 
