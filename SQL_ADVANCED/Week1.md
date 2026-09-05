@@ -52,21 +52,23 @@ https://www.youtube.com/watch?v=lBk5YhLZevs&list=PLVsNizTWUw7GCfy5RH27cQL5MeKYnl
 ## 01-2. MySQL 설치하기
 > **MySQL 설치하는 과정(34 ~ 50p)과 과제 글을 참고하여 설치한 뒤에 인증해주세요.**
 <img width="1918" height="1079" alt="스크린샷 2026-09-03 171947" src="https://github.com/user-attachments/assets/8f9cf3c9-6ee9-4cdf-9779-b97ade3a3f32" />
-
 ## 02-2. 데이터베이스 시작부터 끝까지 
 > **데이터베이스 만들기(68 ~ 71p)의 1~5과정 진행 후 과제 페이지에서 요구하는 인증사진을 첨부해주세요.**
 <img width="1919" height="1077" alt="스크린샷 2026-09-05 214732" src="https://github.com/user-attachments/assets/f8ba5abc-86d9-457f-95a9-1ea23a84ac43" />
-
 > **테이블 만들기(71 ~ 75p)의 1~7과정 진행 후 과제 페이지에서 요구하는 인증사진을 첨부해주세요.**
 <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/75b9bc22-d139-4108-92b8-e69154be63a9" />
 <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/5f805174-75d8-4ff9-8ffa-bf8d8d4da30d" />
-
 > **데이터 입력하기(75 ~ 79p)의 1~11과정 진행 후 과제 페이지에서 요구하는 인증사진을 첨부해주세요.**
 <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/12a1c183-27df-462c-9c64-5319c652771f" />
-
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/642a90ff-0a83-44d0-8d80-6c1901dac8cf" />
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/a165480a-36a8-49a0-a6f1-b5680210fc1a" />
+<img width="1917" height="1079" alt="image" src="https://github.com/user-attachments/assets/de950d45-daf6-476f-9afb-0ccb4b37c9be" />
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/97b50912-8024-49f1-a87a-6d569e92a191" />
 > **데이터 활용하기(80 ~ 83p)의 1~6과정 진행 후 과제 페이지에서 요구하는 인증사진을 첨부해주세요.**
-<!-- 이 부분을 지우고 인증사진을 제출해주세요.-->
-
+<img width="1914" height="1079" alt="image" src="https://github.com/user-attachments/assets/0807f731-2ae3-42a5-9673-9168dd9fada0" />
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/2c48d052-5767-4e26-96ad-5cd3c560f32f" />
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/5ebcc17e-ad4e-477d-a20c-b499f07439ce" />
+<img width="1919" height="1078" alt="image" src="https://github.com/user-attachments/assets/b2efb046-40f7-443a-a966-1c68953158e7" />
 ---
 
 # 2️⃣ 실습과제
