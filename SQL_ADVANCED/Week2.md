@@ -48,8 +48,8 @@ https://www.youtube.com/watch?v=WWAFAm9op2U&list=PLVsNizTWUw7GCfy5RH27cQL5MeKYnl
 <!-- 기본적인 SQL 문법에 관해 배우게 된 점을 적어주세요. -->
 
 <!-- 과제 페이지를 참조하여 인증 사진 2장을 아래의 부분을 지우고 제출해주세요. -->
-![alt text](image.png)
-![alt text](image-5.png)
+![alt text](./Week2_Attachments/image.png)
+![alt text](./Week2_Attachments/image-5.png)
 
 1. Select 구문
 SELECT select_expr -- (열_이름)
@@ -187,16 +187,16 @@ DELETE문
 4. 총 구매 금액이 1000미만인 prod_name 중 상위 2개만 조회하시오.
 
 1. 
-![alt text](image-1.png)
+![alt text](./Week2_Attachments/image-1.png)
 
 2. 
-![alt text](image-2.png)
+![alt text](./Week2_Attachments/image-2.png)
 
 3.
-![alt text](image-3.png)
+![alt text](./Week2_Attachments/image-3.png)
 
 4. 
-![alt text](image-4.png)
+![alt text](./Week2_Attachments/image-4.png)
 
 ### 🎉 수고하셨습니다.
 
