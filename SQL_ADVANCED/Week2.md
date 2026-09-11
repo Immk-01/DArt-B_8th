@@ -186,16 +186,16 @@ DELETE문
 3. 현재 구매 테이블에 존재하는 서로 다른 상품(prod_name)이 어떤 것이 있는지 조회하시오.
 4. 총 구매 금액이 1000미만인 prod_name 중 상위 2개만 조회하시오.
 
-1. 
+1번 문항의 실행 결과
 ![alt text](./Week2_Attachments/image-1.png)
 
-2. 
+2번 문항의 실행 결과
 ![alt text](./Week2_Attachments/image-2.png)
 
-3.
+3번 문항의 실행 결과
 ![alt text](./Week2_Attachments/image-3.png)
 
-4. 
+4번 문항의 실행 결과
 ![alt text](./Week2_Attachments/image-4.png)
 
 ### 🎉 수고하셨습니다.
