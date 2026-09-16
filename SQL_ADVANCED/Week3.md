@@ -44,9 +44,46 @@ https://www.youtube.com/watch?v=IOCsreDYqFE&list=PLVsNizTWUw7GCfy5RH27cQL5MeKYnl
 # 1️⃣ 학습 내용 정리
 
 ## 1. MySQL의 데이터 형식
+[데이터 형식]
+- 다양한 종류의 데이터 형태에 대해서 효율적으로 저장하기 위해 '데이터 형식'이 존재
+1. 정수형(TINYINT, SMALLINT, INT, BIGINT) : C언어나 Python과는 또 다른 종류의 정수형들이 존재하네...
+- 범위가 벗어나는 경우 'Out of range'라는 오류 메시지가 나온다.
+- 'UNSIGNED'라는 예약어를 이용하여 TINYINT의 범위를 -127에서 127을 0부터 255로 변경하여 127보다 큰 숫자를 입력할 수 있다. 
 
-<!-- MySQL의 데이터 형식에 관해 배우게 된 점을 적어주세요. -->
-<!-- 과제 설명 예시처럼 직접 실습 후 사진 한 장 이상을 첨부해주세요. -->
+2. 문자형(CHAR, VARCHAR)
+- 'VARCHAR'는 가변길이 문자형으로, CHAR보다 공간을 효율적으로 운영할 수 있지만, MySQL의 속도면에서는 CHAR로 설정하는 것이 더 나을 수도 있다. (경우에 따라 나눠서 사용)
+- '전화번호'는 숫자들끼리의 연산이나 순서의 의미가 없어 문자형이 더 효과적이긴 하지만, 정수형으로 지정했다고 틀린 것은 아니다. (효율성이나 타당성 부분에서 비효율적임)
+- 열의 길이를 너무 크게 설정한 경우에 'Column length too big'이라는 오류 메세지가 나온다. 
++) 더 큰 데이터를 저장하려고 하는 경우
+- TEXT(TEXT, LONGTEXT) : 소설이나 영화 대본과 같은 긴 내용을 저장하는 경우에 사용하는 데이터 형식이다. 
+- BLOB(BLOB, LONGBLOB) : Binary Long Object의 약자로 글자가 아닌 이미지, 동영상 등의 데이터를 저장하는 경우에 사용 (이러한 데이터들을 이진 데이터라고 함)
+
+3. 실수형 (FLOAT, DOUBLE)
+
+4. 날짜형 (DATE, TIME, DATETIME)
+
+[변수의 사용]
+SET @변수이름 = 변수의 값; -> 변수의 선언 및 값 대입
+SELCET @변수이름          -> 변수의 값 출력
+- SELECT 문에서 행의 개수를 제한하는 'LIMIT'의 뒤에는 상수만 올 수 있어서 변수를 사용할 수 없다. 이를 대신해서 'PREPARE'과 'EXECUTE'를 사용
+
+set @count =3;
+PREPARE mysql FROM 'SELECT mem_name, height FROM member ORDER BY height LIMIT ?';
+EXECUTE mysql USING @count;
+- PREPARE를 이용하여 다음의 쿼리를 준비하고, EXECUTE를 이용하여 USING 키워드를 함께 사용하여 미리 비워두었던 물음표(?) 자리에 대입할 변수 @count를 전달
+
+[데이터 형 변환]
+1. 명시적인 변환 (직접 함수를 사용해서 변환)
+- CAST(값 AS 데이터_형식[(길이)])
+- CONVERT(값, 데이터_형식[(길이)])
++) CONCAT() : 문자를 이어주는 역할을 수행하는 함수이다.
+2. 암시적인 변환 (별도의 지시 없이 자연스럽게 변환)
+
+SELECT '100' + '200'; 
+-> 300
+
+SELECT CONCAT('100', '200');
+-> 100200
 
 > **확인문제: 다음 보기에서 데이터 형식의 변환에 사용되는 함수를 2개 고르세요.**
 
@@ -56,7 +93,7 @@ CONVERT() / DATA() / CAST() / MOVE() / TYPE() / SUM() / AVG() / CURRENT_DATE()
 ```
 
 ```
-여기에 답을 적어주세요!
+CAST(), CONVERT()
 ```
 
 
