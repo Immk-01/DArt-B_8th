@@ -67,9 +67,7 @@ SET @변수이름 = 변수의 값; -> 변수의 선언 및 값 대입
 SELCET @변수이름          -> 변수의 값 출력
 - SELECT 문에서 행의 개수를 제한하는 'LIMIT'의 뒤에는 상수만 올 수 있어서 변수를 사용할 수 없다. 이를 대신해서 'PREPARE'과 'EXECUTE'를 사용
 
-set @count =3;
-PREPARE mysql FROM 'SELECT mem_name, height FROM member ORDER BY height LIMIT ?';
-EXECUTE mysql USING @count;
+![alt text](./Week3_Attachments/image.png)
 - PREPARE를 이용하여 다음의 쿼리를 준비하고, EXECUTE를 이용하여 USING 키워드를 함께 사용하여 미리 비워두었던 물음표(?) 자리에 대입할 변수 @count를 전달
 
 [데이터 형 변환]
@@ -79,11 +77,10 @@ EXECUTE mysql USING @count;
 +) CONCAT() : 문자를 이어주는 역할을 수행하는 함수이다.
 2. 암시적인 변환 (별도의 지시 없이 자연스럽게 변환)
 
-SELECT '100' + '200'; 
--> 300
+![alt text](./Week3_Attachments/image-2.png)
 
-SELECT CONCAT('100', '200');
--> 100200
+![alt text](./Week3_Attachments/image-1.png)
+- 둘 중 하나만 작은 따옴표를 사용하면 변형된다.
 
 > **확인문제: 다음 보기에서 데이터 형식의 변환에 사용되는 함수를 2개 고르세요.**
 
@@ -98,9 +95,33 @@ CAST(), CONVERT()
 
 
 ## 2. 두 테이블을 묶는 조인
+[조인]
+일대다 관계의 이해 : 두 테이블의 조인을 위해서는 테이블이 '일대다 관계'로 연결되어야 함
+  주로 기본 키(PK)와 외래 키(FK) 관계로 맺어져 있어서, 일대다 관계를 'PK-FK 관계'라고도 함
+1. 내부 조인
+- 조인은 3개 이상의 테이블로도 할 수 있지만 대부분은 2개로 조인한다. 
+- INNER JOIN을 그냥 JOIN이라고만 사용해도 INNER JOIN으로 인식한다. (INNER JOIN은 ON을 사용하여 조인될 조건을 작성)
 
-<!-- 두 테이블을 묶는 조인에 관해 배우게 된 점을 적어주세요. -->
-<!-- 과제 설명 예시처럼 직접 실습 후 인증 사진 4장 이상을 첨부해주세요. -->
+![alt text](./Week3_Attachments/image-3.png)
+![alt text](./Week3_Attachments/image-4.png)
+- 열 이름인 'mem_id'가 회원 테이블, 구매 테이블 모두에 들어 있어서 어느 테이블의 mem_id인지 헷갈려서 오류가 발생한다. 
+- 이 경우 mem_id를 buy.mem_id로 변경 (테이블_이름.열_이름)
+
+- 'FROM buy B'와 'INNER JOIN member M'을 통해 테이블의 이름 뒤에 별칭을 부여할 수 있다. (여러 개의 테이블이 관련된 조인에서는 별칭을 사용하는 것을 권장)
+- 내부 조인은 두 테이블에 모두 있는 내용만 출력
+
+2. 외부 조인
+- 내부 조인과 달리 한쪽에만 데이터가 있어도 결과가 나온다. 
+![alt text](./Week3_Attachments/image-5.png)
+- LEFT OUTER JOIN (= LEFT JOIN) : 왼쪽 테이블의 내용은 모두 출력
+- RIGHT OUTER JOIN (=RIGHT JOIN) : 오른쪽 테이블의 내용은 모두 출력
+- FULL OUTER JOIN : 왼쪽 외부 조인과 오른쪽 외부 조인이 합쳐진 것
+
+3. 기타 조인
+- 상호 조인(CROSS JOIN) : 한쪽 테이블의 모든 행과 다른 쪽 테이블의 모든 행을 조인 (상호 조인 결과의 전체 행 개수는 두 테이블의 각 행의 개수를 곱한 개수)
+![alt text](./Week3_Attachments/image-6.png)
+- 자체 조인(SELF JOIN) : 자신이 자신과 조인한다는 의미
+![alt text](./Week3_Attachments/image-7.png)
 
 > **확인문제: 다음 SQL은 회원으로 가입만 하고, 한 번도 구매한 적이 없는 회원의 목록을 조회하는 쿼리입니다. 빈칸에 들어갈 가장 적절한 구문을 고르세요..**
 
@@ -120,12 +141,37 @@ SELECT DISTINCT M.mem_id, B.prod_name, M.mem_name, M.addr
 4. WHERE B.prod_name IS NULL
 ```
 ```
-여기에 답과 그 이유를 적어주세요!
+정답 
+4. WHERE B.prod_name IS NULL : 조인이 완료된 결과에서 조건을 설정하기 위해서는 WHERE를 사용
+오답
+1. JOIN은 테이블과 테이블을 연결할 때 사용하는 키워드이므로, 그 뒤에 조건문이 올 수 없음
+2. LIMIT은 조회하는 행의 개수를 제한하는 키워드이므로 뒤에 반드시 숫자가 와야 함
+3. HAVING은 GROUP BY와 함께 사용되어 그룹화된 집계 결과에 조건을 걸 때 사용하는 것으로 현재 쿼리에는 GROUP BY가 없어 단독으로 사용할 수 없음
+
 ```
 
 ## 3. SQL 프로그래밍 
 
-<!-- IF문, CASE문, WHILE문에 관해 배우게 된 점을 적어주세요. -->
+[IF문]
+- 두 문장 이상이 처리되어야 할 때는 BEGIN~END로 묶어줘야 함
+![alt text](./Week3_Attachments/image-8.png)
+
+[IF~ELSE문]
+- IF~ELSE 문은 조건식이 참일 때와 거짓일 때 다른 부분이 실행됨
+![alt text](./Week3_Attachments/image-9.png)
+- 그냥 SELECT와 달리 INTO 변수를 활용하여 결과를 변수에 저장한다. 
+
+[CASE문]
+- CASE의 경우 WHEN과 함께 사용
+![alt text](./Week3_Attachments/image-10.png)
+
+[WHILE문]
+- WHILE문은 조건식이 참인 동안에 SQL 문장들을 계속 반복
+![alt text](./Week3_Attachments/image-11.png)
+
+[동적 SQL]
+- PREPARE와 EXECUTE를 실행한 뒤에 DEALLOACTE PREPARE로 문장을 해제해주는 것이 바람직하다.
+![alt text](./Week3_Attachments/image-12.png)
 
 > **확인문제: 다음은 CASE 문의 형식입니다. 빈칸에 들어갈 가장 적절한 명령어를 보기에서 고르세요..**
 
@@ -145,8 +191,8 @@ WHEN / THEN / CURRENT / DATE / TIME / IF / END IF / CASE
 
 ```
 여기에 답을 적어주세요!
-(1)
-(2) 
+(1) WHEN
+(2) CASE
 ```
 
 
@@ -231,8 +277,24 @@ INSERT INTO orders VALUES
    - 생성 후 CALL로 실행 결과를 확인하시오.
 
 
-<!-- 이 부분을 지우고 인증사진을 제출해주세요.-->
+1. 데이터 형식 변환
+![alt text](./Week3_Attachments/image-13.png)
 
+2. 데이터 형식 변환
+![alt text](./Week3_Attachments/image-14.png)
+
+3. 내부 조인
+![alt text](./Week3_Attachments/image-15.png)
+
+4. 외부 조인
+![alt text](./Week3_Attachments/image-16.png)
+
+5. 스토어드 프로시저
+[고액 주문의 경우]
+![alt text](./Week3_Attachments/image-17.png)
+
+[일반 주문의 경우]
+![alt text](./Week3_Attachments/image-18.png)
 
 ### 🎉 수고하셨습니다.
 
