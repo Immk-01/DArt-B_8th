@@ -44,7 +44,7 @@ https://www.youtube.com/watch?v=JrXWxku7ZIM&list=PLVsNizTWUw7GCfy5RH27cQL5MeKYnl
 # 1️⃣ 학습 내용 정리
 ## 1. 테이블 만들기 
 ### 1. 테이블의 기본 개념
-**테이블(Table)**은 데이터를 저장하는 기본 단위이다.
+**테이블(Table)** 은 데이터를 저장하는 기본 단위이다.
 
 - **열(Column)**: 데이터의 속성
     - 예 : 아이디, 이름, 주소, 전화번호
@@ -65,40 +65,40 @@ https://www.youtube.com/watch?v=JrXWxku7ZIM&list=PLVsNizTWUw7GCfy5RH27cQL5MeKYnl
 
 ### 2. GUI 환경에서 테이블 만들기
 #### 데이터베이스 생성하기
-![alt text](image.png)
+![alt text](./Week4_Attachments/image.png)
 
 #### 테이블 생성하기
 [member 테이블 생성]
-![alt text](image-1.png)
+![alt text](./Week4_Attachments/image-1.png)
 
 [buy 테이블 생성]
-![alt text](image-2.png)
+![alt text](./Week4_Attachments/image-2.png)
 
 #### 데이터 입력하기
 [member 테이블에 데이터 입력]
-![alt text](image-3.png)
+![alt text](./Week4_Attachments/image-3.png)
 
 [buy 테이블에 데이터 입력]
-![alt text](image-4.png)
-![alt text](image-5.png)
+![alt text](./Week4_Attachments/image-4.png)
+![alt text](./Week4_Attachments/image-5.png)
 
 ### 3. SQL로 테이블 만들기
 #### 데이터베이스 생성하기
-![alt text](image-6.png)
+![alt text](./Week4_Attachments/image-6.png)
 
 #### 테이블 생성하기
 [member 테이블 생성]
-![alt text](image-9.png)
+![alt text](./Week4_Attachments/image-9.png)
 
 [buy 테이블 생성]
-![alt text](image-10.png)
+![alt text](./Week4_Attachments/image-10.png)
 
 #### 데이터 입력하기
 [member 테이블에 데이터 입력]
-![alt text](image-11.png)
+![alt text](./Week4_Attachments/image-11.png)
 
 [buy 테이블에 데이터 입력]
-![alt text](image-12.png)
+![alt text](./Week4_Attachments/image-12.png)
 
 ### 4. 핵심 정리
 - **CREATE TABLE**은 테이블을 생성하는 SQL로 테이블 이름, 열 이름, 데이터 형식 등을 지정
@@ -120,7 +120,7 @@ https://www.youtube.com/watch?v=JrXWxku7ZIM&list=PLVsNizTWUw7GCfy5RH27cQL5MeKYnl
 
 ## 2. 제약조건으로 테이블을 견고하게 
 ### 1. 제약조건의 기본 개념과 종류
-**제약조건(Constraint)**은 데이터의 무결성을 지키기 위해 제한하는 조건
+**제약조건(Constraint)** 은 데이터의 무결성을 지키기 위해 제한하는 조건
 (**데이터의 무결성** : '데이터에 결함이 없음'을 의미)
 
 ### 2. 기본 키 제약 조건
@@ -132,14 +132,14 @@ https://www.youtube.com/watch?v=JrXWxku7ZIM&list=PLVsNizTWUw7GCfy5RH27cQL5MeKYnl
 #### 2 - 1. CREATE TABLE에서 설정하는 기본 키 제약조건
 - 열 이름 뒤에 **PRIMARY KEY**를 붙여주면 기본 키로 설정된다.
 - 또는 제일 마지막 행에 **PRIMARY KEY(열 이름)**를 추가해도 된다. 
-+) 테이블을 삭제하는 경우에 기본 키-외래 키 관계로 연결된 테이블은 **외래 키가 설정된 테입르을 먼저 삭제**해야 한다.
++) 테이블을 삭제하는 경우에 기본 키-외래 키 관계로 연결된 테이블은 **외래 키가 설정된 테이블을 먼저 삭제**해야 한다.
 
 #### 2 - 2. ALTER TABLE에서 설정하는 기본 키 제약조건
 - ALTER TABLE member
     ADD CONSTRAINT
     PRIMARY KEY (mem_id);
     로 PRIMARY KEY를 지정한 것은 CREATE TABLE로 PRIMARY KEY를 지정한 것과 동일한 결과를 갖는다. 
-+) 기본 키는 별도의 이름이 없으며, DESCRIBE 명령으로 확인하면 그냥 PRI로만 나온다. 이때 **CONSTRAINT PRIMARY KEY PK_member_mem_id (mem_id)**를 통해 이름을 붙여줄 수 있다. 
++) 기본 키는 별도의 이름이 없으며, DESCRIBE 명령으로 확인하면 그냥 PRI로만 나온다. 이때 **CONSTRAINT PRIMARY KEY PK_member_mem_id (mem_id)** 를 통해 이름을 붙여줄 수 있다. 
 
 #### 3. 외래 키 제약조건
 - **외래 키(FOREIGN KEY)** : 두 테이블 사이의 관계를 연결해주고, 그 결과 데이터 무결성을 보장해주는 역할을 한다. 
@@ -147,7 +147,7 @@ https://www.youtube.com/watch?v=JrXWxku7ZIM&list=PLVsNizTWUw7GCfy5RH27cQL5MeKYnl
 - 기본 키가 있는 테이블은 **기준 테이블**이고, 외래 키가 있는 테이블은 **참조 테이블**이다. 
 
 #### 3 - 1. CREATE TABLE에서 설정하는 외래 키 제약조건
-- CREATE TABLE 끝에 **FOREIGN KEY(열_이름) REFERENCES 기준_-_테이를(열_이름)**을 입력하여 외래 키를 설정한다. 
+- CREATE TABLE 끝에 **FOREIGN KEY(열_이름) REFERENCES 기준_-_테이를(열_이름)** 을 입력하여 외래 키를 설정한다. 
 - 기준 테이블의 열이 **PRIMARY KEY 또는 Unique**가 아니라면 외래 키 관계는 설정되지 않는다. 
 
 #### 3 - 2. ALTER TABLE에서 설정하는 외래 키 제약조건
@@ -190,7 +190,6 @@ https://www.youtube.com/watch?v=JrXWxku7ZIM&list=PLVsNizTWUw7GCfy5RH27cQL5MeKYnl
 CHECK / DEFAULT / PRIMAY KEY / UNIQUE / NOT NULL / FOREIGN KEY
 ```
 
-```
 1. 입력되는 데이터가 조건에 맞는지 검사하는 기능: **CHECK**
    - 입력된 값이 지정한 조건을 만족하는지 검사하는 제약조건
 
@@ -204,12 +203,105 @@ CHECK / DEFAULT / PRIMAY KEY / UNIQUE / NOT NULL / FOREIGN KEY
 **PRIMARY KEY** : 각 행을 유일하게 구분하는 기본키
 **UNIQUE** : 중복값을 허용하지 않음
 **FOREIGN KEY** : 다른 테이블의 키를 참조하는 외래키
-```
+
 
 
 ## 3. 가상의 테이블: 뷰 
 ### 1. 뷰의 개념
+- 뷰(view)는 **데이터베이스 개체** 중 하나로, 한마디로 **가상의 테이블**로 표현
+- 뷰의 실체는 SELECT 문으로 만들어져 있기 때문에 뷰에 접근하는 순간 SELECT가 실행되고 그 결과가 화면에 출려되는 방식으로 **테이블처럼 데이터를 가지고 있지는 않는다.**
+- 뷰의 종류 中 **단순 뷰** : 하나의 테이블과 연관된 뷰
+- 뷰의 종류 中 **복합 뷰** : 2개 이상의 테이블과 연관된 뷰
+
 #### 1 - 1. 뷰의 기본 생성
+##### 뷰를 만드는 형식
+```
+CREATE VIEW 뷰_이름
+AS
+   SELECT 문;
+```
+##### 뷰를 만든 후에 접근하는 방식
+```
+SELECT 열_이름 FROM 뷰_이름
+   [WHERE 조건];
+```
+#### 1 - 2. 뷰의 작동
+- 뷰는 기본적으로 **'읽기 전용'** 으로 사용되지만, 뷰를 통해서 **원본 테이블의 데이터를 수정할 수도 있다.** (몇 가지의 조건을 만족하는 경우)
+
+#### 1 - 3. 뷰를 사용하는 이유
+① **보안(Securtiy)** 에 도움이 된다. 
+- 테이블에 접근하게 되면 모든 데이터가 노출되지만 뷰를 생성해서 **테이블에 접근하지 못하도록 권한을 제한하고, 뷰에만 접근할 수 있도록 권한을 준다면** 이러한 문제를 쉽게 해결할 수 있다. 
+
+② 복잡한 SQL을 단순하게 만들 수 있다. 
+
+### 2. 뷰의 실제 작동
+#### 2 - 1. 뷰의 실제 생성, 수정, 삭제
+##### 뷰의 생성
+- **별칭** 을 사용하여 기본적인 뷰를 생성하면서 뷰에서 사용될 열 이름을 테이블과 다르게 지정할 수도 있다. (중간에 띄어쓰기 사용도 가능)
+- 별칭의 사용 방법 : 열 이름 뒤에 작은따옴표 또는 큰따옴표로 묶어주고, 형식상 **AS** 를 붙여준다.
+- 뷰를 조회할 때 **열 이름에 공백이 있으면 백팅(`)** 으로 묶어줘야 한다.
+```
+USE market_db;
+CREATE VIEW v_viewtest1
+AS
+    SELECT B.mem_id 'Member ID', M.mem_name AS 'Member Name', 
+            B.prod_name "Product Name", 
+            CONCAT(M.phone1, M.phone2) AS "Office Phone" 
+       FROM buy B
+         INNER JOIN member M
+         ON B.mem_id = M.mem_id;
+         
+SELECT  DISTINCT `Member ID`, `Member Name` FROM v_viewtest1;
+```
+
+##### 뷰의 수정
+- **ALTER VIEW** 구문을 사용하여 수정하고, 열 이름에 한글을 사용해도 됨
+- **단** , 열 이름에 한글을 사용하면 **한글 운영 체제 외에는** 인식되지 않을 수도 있어 권장하지는 않는다. 
+```
+ALTER VIEW v_viewtest1
+AS
+    SELECT B.mem_id '회원 아이디', M.mem_name AS '회원 이름', 
+            B.prod_name "제품 이름", 
+            CONCAT(M.phone1, M.phone2) AS "연락처" 
+       FROM buy B
+         INNER JOIN member M
+         ON B.mem_id = M.mem_id;
+         
+SELECT  DISTINCT `회원 아이디`, `회원 이름` FROM v_viewtest1;
+```
+
+##### 뷰의 삭제
+- **DROP VIEW** 를 사용하여 삭제한다. 
+```
+DROP VIEW v_viewtest1;
+```
+
+#### 2 - 2. 뷰의 정보 확인
+- **DESCIBE** 문으로 기존에 생성된 뷰에 대한 정보를 확인할 수 있다. (DESCRIBE는 줄여서 DESC라고 써도 된다.)
+- 테이블과 동일하게 정보를 보여주지만, PRIMARY KEY 등의 정보는 확인되지 않는다. 
++) **CREATE OR REPLACE VIEW** 는 기존에 뷰가 있어도 덮었쓰는 효과를 내기 때문에 **CREATE VIEW** 와 달리 기존에 뷰가 있어도 오류가 발생하지 않는다.
+- **SHOW CREATE VIEW** 문으로 뷰의 소스 코드도 확인할 수 있다. (뷰를 생성할 때보다 훨씬 복잡하게 나오지만 핵심적인 코드는 생성할 때 사용한 코드와 동일
+
+#### 2 - 3. 뷰를 통한 데이터의 수정/삭제
+- 뷰를 통해서 데이터를 입력하려면, 뷰에서 보이지 않는 테이블의 열에 NOT NULL이 없어야 한다. 
+- **UPDATE**, **DELETE** 문을 통해 데이터의 수정과 삭제가 가능하다. 
+
+#### 2 - 4. 뷰를 통한 데이터의 입력
+- **INSERT** 문을 통해 테이터를 입력할 수 있다.
+- **WITH CHECK OPTION**을 통해 뷰에 설정된 값의 범위가 벗어나는 값은 입력되지 않도록 할 수 있다. 
+- 뷰의 WITH CHECK OPTION은 설정한 범위의 데이터만 입력되도록 제한한다.
+```
+ALTER VIEW v_height167
+AS
+    SELECT * FROM member WHERE height >= 167
+        WITH CHECK OPTION ;
+        
+INSERT INTO v_height167 VALUES('TOB','텔레토비', 4, '영국', NULL, NULL, 140, '1995-01-01') ;
+```
+
+#### 2 - 5. 뷰가 참조하는 테이블 삭제
+- 뷰가 참조하는 테이블들을 삭제한 경우 **조회할 수 없다는 메시지** 가 나온다.
+- 뷰가 조회되지 않으면 **CHECK TABLE** 문으로 뷰의 상태를 확인할 수 있다.
 
 > **확인문제: 다음은 뷰의 특징입니다. 거리가 먼 것을 하나 고르세요.**
 
@@ -222,7 +314,15 @@ CHECK / DEFAULT / PRIMAY KEY / UNIQUE / NOT NULL / FOREIGN KEY
 ```
 
 ```
-여기에 답과 그 이유를 적어주세요!
+답 : 1️⃣ 뷰에는 테이블의 모든 열을 포함시켜야 합니다.
+이유
+- 뷰는 원본 테이블의 모든 열을 반드시 포함할 필요가 없다.
+- 필요한 열만 선택해서 뷰를 만들 수 있다.
+
+반면, 
+2️⃣ 복잡한 SQL을 단순하게 만들 수 있고,
+3️⃣ 특정 데이터만 보여줄 수 있어 보안에 도움이 되며,
+4️⃣ 사용자가 원본 테이블에는 접근하지 못하고 뷰에만 접근하도록 권한을 설정할 수도 있다.
 ```
 
 
@@ -278,8 +378,11 @@ USE week4_db;
 
 1. 각 문제의 실행 결과가 보이도록 화면을 캡처합니다.
 2. 테이블 생성 결과, 데이터 삽입 결과, 뷰 생성 및 조회 결과가 모두 보이도록 제출합니다.
-
-<!-- 이 부분을 지우고 인증사진을 제출해주세요.-->
+![alt text](./Week4_Attachments/image-13.png)
+![alt text](./Week4_Attachments/image-14.png)
+![alt text](./Week4_Attachments/image-15.png)
+![alt text](./Week4_Attachments/image-16.png)
+![alt text](./Week4_Attachments/image-17.png)
 
 ### 🎉 수고하셨습니다.
 
