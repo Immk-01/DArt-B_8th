@@ -40,102 +40,102 @@
 
 ## 07-1. 엑셀 기초 계산 함수와 통계 함수 사용하기
 > **SUM, AVERAGE, COUNTA 함수로 재고 현황 파악하기(342 ~ 344p)를 진행 후 인증사진을 첨부해주세요.**
-![alt text](image.png)
-![alt text](image-1.png)
+![alt text](./Week6_Attachments/image.png)
+![alt text](./Week6_Attachments/image-1.png)
 
 > **MAX, MIN, LARGE, SMALL 함수로 만족도 통계 구하기(345 ~ 347p)를 진행 후 인증사진을 첨부해주세요.**
-![alt text](image-2.png)
-![alt text](image-3.png)
+![alt text](./Week6_Attachments/image-2.png)
+![alt text](./Week6_Attachments/image-3.png)
 
 ## 07-2. 논리 함수, 참조 함수, 집계 함수
 > **IF 함수로 성적 관리하기(348 ~ 350p)를 진행 후 인증사진을 첨부해주세요.**
-![alt text](image-4.png)
-![alt text](image-5.png)
+![alt text](./Week6_Attachments/image-4.png)
+![alt text](./Week6_Attachments/image-5.png)
 
 > **VLOOKUP, IFERROR 함수로 재고 현황 관리하기(351 ~ 355p)를 진행 후 인증사진을 첨부해주세요.**
-![alt text](image-6.png)
-![alt text](image-7.png)
-![alt text](image-8.png)
+![alt text](./Week6_Attachments/image-6.png)
+![alt text](./Week6_Attachments/image-7.png)
+![alt text](./Week6_Attachments/image-8.png)
 
 > **SUMIF, COUNTIF, AVERAGEIF 함수로 매출, 배송 현황 관리(355 ~ 365p)를 진행 후 인증사진을 첨부해주세요.**
-![alt text](image-9.png)
-![alt text](image-10.png)
-![alt text](image-11.png)
-![alt text](image-12.png)
-![alt text](image-13.png)
-![alt text](image-14.png)
+![alt text](./Week6_Attachments/image-9.png)
+![alt text]./Week6_Attachments/(image-10.png)
+![alt text](./Week6_Attachments/image-11.png)
+![alt text](./Week6_Attachments/image-12.png)
+![alt text](./Week6_Attachments/image-13.png)
+![alt text](./Week6_Attachments/image-14.png)
 
 ## 07-3. 엑셀의 활용도를 올려 줄 실무 보조 함수
 > **LEFT, RIGHT, MID 함수로 텍스트 가공하기(366 ~ 370p)를 진행 후 인증사진을 첨부해주세요.**
-![alt text](image-15.png)
-![alt text](image-16.png)
-![alt text](image-17.png)
-![alt text](image-18.png)
-![alt text](image-19.png)
+![alt text](./Week6_Attachments/image-15.png)
+![alt text](./Week6_Attachments/image-16.png)
+![alt text](./Week6_Attachments/image-17.png)
+![alt text](./Week6_Attachments/image-18.png)
+![alt text](./Week6_Attachments/image-19.png)
 
 > **TRIM 함수 사용으로 보이지 않는 문자로 인한 오류 방지하기(370 ~ 373p)를 진행 후 인증사진을 첨부해주세요.**
-![alt text](image-20.png)
-![alt text](image-21.png)
-![alt text](image-22.png)
+![alt text](./Week6_Attachments/image-20.png)
+![alt text](./Week6_Attachments/image-21.png)
+![alt text](./Week6_Attachments/image-22.png)
 
 > **TODAY, DATE, YEAR/MONTH/DATE 함수로 날짜 구하기(381 ~ 383p)를 진행 후 인증사진을 첨부해주세요.**
-![alt text](image-23.png)
-![alt text](image-24.png)
-![alt text](image-25.png)
-![alt text](image-26.png)
+![alt text](./Week6_Attachments/image-23.png)
+![alt text](./Week6_Attachments/image-24.png)
+![alt text](./Week6_Attachments/image-25.png)
+![alt text](./Week6_Attachments/image-26.png)
 
 > **INDIRECT 함수로 여러 시트 실시간 참조하기(385 ~ 388p)를 진행 후 인증사진을 첨부해주세요.**
-![alt text](image-27.png)
-![alt text](image-28.png)
+![alt text](./Week6_Attachments/image-27.png)
+![alt text](./Week6_Attachments/image-28.png)
 
 ## 07-4. 더 강력해진 기능의 엑셀 2021 이후 버전, M365 신규 함수
 > **최신 버전 엑셀에서 배열 사용하기(391 ~ 392p)를 진행 후 인증사진을 첨부해주세요.**
-![alt text](image-29.png)
-![alt text](image-30.png)
-![alt text](image-31.png)
+![alt text](./Week6_Attachments/image-29.png)
+![alt text](./Week6_Attachments/image-30.png)
+![alt text](./Week6_Attachments/image-31.png)
 
 > **VLOOKUP보다 중요한 필수 신규 함수, FILTER(393 ~ 396p)를 진행 후 인증사진을 첨부해주세요.**
-![alt text](image-32.png)
-![alt text](image-33.png)
-![alt text](image-34.png)
+![alt text](./Week6_Attachments/image-32.png)
+![alt text](./Week6_Attachments/image-33.png)
+![alt text](./Week6_Attachments/image-34.png)
 
 > **이름만으로도 강력해 보이는 M365 신규 함수, XLOOKUP(396 ~ 398p)를 진행 후 인증사진을 첨부해주세요.**
-![alt text](image-35.png)
-![alt text](image-36.png)
-![alt text](image-37.png)
-![alt text](image-38.png)
+![alt text](./Week6_Attachments/image-35.png)
+![alt text](./Week6_Attachments/image-36.png)
+![alt text](./Week6_Attachments/image-37.png)
+![alt text](./Week6_Attachments/image-38.png)
 
 > **다른 기능과 만나면 활용도가 배가 되는 UNIQUE, SORT 함수(399 ~ 402p)를 진행 후 인증사진을 첨부해주세요.**
-![alt text](image-39.png)
-![alt text](image-40.png)
-![alt text](image-41.png)
-![alt text](image-42.png)
-![alt text](image-43.png)
+![alt text](./Week6_Attachments/image-39.png)
+![alt text](./Week6_Attachments/image-40.png)
+![alt text](./Week6_Attachments/image-41.png)
+![alt text](./Week6_Attachments/image-42.png)
+![alt text](./Week6_Attachments/image-43.png)
 
 ## 07-5. 실무에서 발생하는 어려움을 해결하는 필수 함수 공식
 > **여러 조건을 비교해서 결과 출력하기, 다중 조건 IF 함수(403 ~ 407p)를 진행 후 인증사진을 첨부해주세요.**
-![alt text](image-44.png)
-![alt text](image-45.png)
-![alt text](image-46.png)
-![alt text](image-47.png)
+![alt text](./Week6_Attachments/image-44.png)
+![alt text](./Week6_Attachments/image-45.png)
+![alt text](./Week6_Attachments/image-46.png)
+![alt text](./Week6_Attachments/image-47.png)
 
 > **단어의 포함 여부를 검색하는 ISNUMBER, SEARCH 함수 공식(407 ~ 411p)를 진행 후 인증사진을 첨부해주세요.**
-![alt text](image-48.png)
-![alt text](image-49.png)
-![alt text](image-50.png)
-![alt text](image-51.png)
+![alt text](./Week6_Attachments/image-48.png)
+![alt text](./Week6_Attachments/image-49.png)
+![alt text](./Week6_Attachments/image-50.png)
+![alt text](./Week6_Attachments/image-51.png)
 
 > **VLOOKUP 함수의 단점을 해결해 주는 INDEX/MATCH 함수 공식(412 ~ 415p)를 진행 후 인증사진을 첨부해주세요.**
-![alt text](image-52.png)
-![alt text](image-53.png)
-![alt text](image-54.png)
-![alt text](image-55.png)
+![alt text](./Week6_Attachments/image-52.png)
+![alt text](./Week6_Attachments/image-53.png)
+![alt text](./Week6_Attachments/image-54.png)
+![alt text](./Week6_Attachments/image-55.png)
 
 > **여러 조건을 만족하는 결과 겁색하기, VLOOKUP 다중 조건 공식(415 ~ 417p)를 진행 후 인증사진을 첨부해주세요.**
-![alt text](image-56.png)
-![alt text](image-57.png)
-![alt text](image-58.png)
-![alt text](image-59.png)
+![alt text](./Week6_Attachments/image-56.png)
+![alt text](./Week6_Attachments/image-57.png)
+![alt text](./Week6_Attachments/image-58.png)
+![alt text](./Week6_Attachments/image-59.png)
 
 
 ---
