@@ -59,20 +59,32 @@ https://www.youtube.com/watch?v=aiMSluMNzI8&list=PLVsNizTWUw7GCfy5RH27cQL5MeKYnl
 ![alt text](./Week7_Attachments/image-3.png)
 
 정답 : ③
+
 -> 파이썬(Python)은 오픈소스 프로그래밍 언어로, 개인과 기업 모두 무료로 사용할 수 있습니다. 
+
 **보기별 해설**
+
 ① 파이썬은 네덜란드의 프로그래머 귀도 반 로섬(Guido van Rossum)이 개발한 언어이다. 
+
 ② 파이썬은 TensorFlow, PyTorch 등 다양한 라이브러리를 지원하여 인공지능 및 머신러닝 개발에 널리 사용된다.
+
 ④ 파이썬은 데이터 분석, 웹 개발, 인공지능 등 다양한 분야에서 활용할 수 있는 외부 라이브러리가 풍부하다.
+
 
 ![alt text](./Week7_Attachments/image-4.png)
 
 정답 : ③
+
 -> 파이썬은 설치 과정이 비교적 간단하여 전문 지식이 없는 일반 사용자도 쉽게 설치할 수 있다.
+
 **보기별 해설**
+
 ① 파이썬은 공식 홈페이지에서 무료로 다운로드할 수 있다.
+
 ② 파이썬은 32비트와 64비트 환경을 지원하는 설치 버전을 제공한다. 단, 운영체제와 버전에 따라 제공 여부가 다를 수 있다.
+
 ④ 파이썬에서 MySQL 데이터베이스에 연결할 때 PyMySQL 라이브러리를 추가로 설치하여 사용할 수 있다. 다만 mysql-connector-python 등 다른 라이브러리도 사용할 수 있으므로 PyMySQL이 반드시 필요한 것은 아니다.
+
 
 ![alt text](./Week7_Attachments/image-20.png)
 
