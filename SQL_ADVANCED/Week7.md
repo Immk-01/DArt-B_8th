@@ -57,6 +57,7 @@ https://www.youtube.com/watch?v=aiMSluMNzI8&list=PLVsNizTWUw7GCfy5RH27cQL5MeKYnl
 
 ### 확인문제
 ![alt text](./Week7_Attachments/image-3.png)
+
 정답 : ③
 -> 파이썬(Python)은 오픈소스 프로그래밍 언어로, 개인과 기업 모두 무료로 사용할 수 있습니다. 
 **보기별 해설**
@@ -65,6 +66,7 @@ https://www.youtube.com/watch?v=aiMSluMNzI8&list=PLVsNizTWUw7GCfy5RH27cQL5MeKYnl
 ④ 파이썬은 데이터 분석, 웹 개발, 인공지능 등 다양한 분야에서 활용할 수 있는 외부 라이브러리가 풍부하다.
 
 ![alt text](./Week7_Attachments/image-4.png)
+
 정답 : ③
 -> 파이썬은 설치 과정이 비교적 간단하여 전문 지식이 없는 일반 사용자도 쉽게 설치할 수 있다.
 **보기별 해설**
@@ -72,7 +74,8 @@ https://www.youtube.com/watch?v=aiMSluMNzI8&list=PLVsNizTWUw7GCfy5RH27cQL5MeKYnl
 ② 파이썬은 32비트와 64비트 환경을 지원하는 설치 버전을 제공한다. 단, 운영체제와 버전에 따라 제공 여부가 다를 수 있다.
 ④ 파이썬에서 MySQL 데이터베이스에 연결할 때 PyMySQL 라이브러리를 추가로 설치하여 사용할 수 있다. 다만 mysql-connector-python 등 다른 라이브러리도 사용할 수 있으므로 PyMySQL이 반드시 필요한 것은 아니다.
 
-![alt text](./Week7_Attachments/<스크린샷 2026-11-08 235130.png>)
+![alt text](./Week7_Attachments/image-20.png)
+
 정답 : ④
 -> 파이썬은 일반적으로 인터프리터 언어로 분류된다. 실행 과정에서 바이트코드로 컴파일하는 단계가 있지만, 일반적인 컴파일 언어와 실행 방식이 다르다. 파이썬은 일부 컴파일 언어보다 실행 속도가 느릴 수 있다. 
 **보기별 해설**
@@ -81,6 +84,7 @@ https://www.youtube.com/watch?v=aiMSluMNzI8&list=PLVsNizTWUw7GCfy5RH27cQL5MeKYnl
 ③ 스크립트 모드(Script Mode)는 여러 줄의 코드를 파일에 작성한 후 한꺼번에 실행하는 방식이다. 
 
 ![alt text](./Week7_Attachments/image-5.png)
+
 정답 : ④
 -> 파이썬 소스 코드 파일의 표준 확장자로, 작성한 코드를 저장하고 실행할 때 사용한다.
 **보기별 해설**
